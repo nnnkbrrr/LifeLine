@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		632110B329F46CA50089AF73 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632110B229F46CA50089AF73 /* Onboarding.swift */; };
+		633812CD29F44AEC00670D63 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 633812CB29F44AEC00670D63 /* DataModel.xcdatamodeld */; };
+		633812CF29F4502600670D63 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633812CE29F4502600670D63 /* Persistence.swift */; };
+		633812D529F450C200670D63 /* Visit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633812D429F450C200670D63 /* Visit.swift */; };
+		6352EB102A17A3BA0015E9D1 /* CMActivity extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352EB0F2A17A3BA0015E9D1 /* CMActivity extensions.swift */; };
+		6352EB122A17B2EE0015E9D1 /* Visit Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352EB112A17B2ED0015E9D1 /* Visit Cell.swift */; };
+		6352EB142A17B3A80015E9D1 /* Motion Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352EB132A17B3A80015E9D1 /* Motion Cell.swift */; };
+		6363272D2A04104D00EEB066 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6363272C2A04104D00EEB066 /* Timeline.swift */; };
+		6363272F2A0431AA00EEB066 /* MotionActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6363272E2A0431AA00EEB066 /* MotionActivityManager.swift */; };
+		63792B7F2A001DD1000897C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63792B7E2A001DD1000897C2 /* ContentView.swift */; };
+		63792B832A013AD5000897C2 /* InvertedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63792B822A013AD5000897C2 /* InvertedScrollView.swift */; };
+		63792B852A013C5C000897C2 /* AddressDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63792B842A013C5C000897C2 /* AddressDecoder.swift */; };
+		63792B872A015B07000897C2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63792B862A015B07000897C2 /* LocationManager.swift */; };
+		63CC74B42A13DEEC00A0424D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CC74B32A13DEEC00A0424D /* Activity.swift */; };
+		63CC74B62A13DF0C00A0424D /* Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CC74B52A13DF0C00A0424D /* Motion.swift */; };
+		63E565352A069D4A005CDB69 /* Codable Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E565342A069D4A005CDB69 /* Codable Entities.swift */; };
+		63F9BCDD29EC304900787CE8 /* LifeLineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F9BCDC29EC304900787CE8 /* LifeLineApp.swift */; };
+		63F9BCE129EC304C00787CE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F9BCE029EC304C00787CE8 /* Assets.xcassets */; };
+		63F9BCE429EC304C00787CE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F9BCE329EC304C00787CE8 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		632110B129F466B70089AF73 /* LifeLine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LifeLine.entitlements; sourceTree = "<group>"; };
+		632110B229F46CA50089AF73 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		633812CC29F44AEC00670D63 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		633812CE29F4502600670D63 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		633812D429F450C200670D63 /* Visit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visit.swift; sourceTree = "<group>"; };
+		6352EB0F2A17A3BA0015E9D1 /* CMActivity extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMActivity extensions.swift"; sourceTree = "<group>"; };
+		6352EB112A17B2ED0015E9D1 /* Visit Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Visit Cell.swift"; sourceTree = "<group>"; };
+		6352EB132A17B3A80015E9D1 /* Motion Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Motion Cell.swift"; sourceTree = "<group>"; };
+		6363272C2A04104D00EEB066 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		6363272E2A0431AA00EEB066 /* MotionActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionActivityManager.swift; sourceTree = "<group>"; };
+		63792B7E2A001DD1000897C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63792B822A013AD5000897C2 /* InvertedScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertedScrollView.swift; sourceTree = "<group>"; };
+		63792B842A013C5C000897C2 /* AddressDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDecoder.swift; sourceTree = "<group>"; };
+		63792B862A015B07000897C2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		63CC74B32A13DEEC00A0424D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		63CC74B52A13DF0C00A0424D /* Motion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motion.swift; sourceTree = "<group>"; };
+		63E565342A069D4A005CDB69 /* Codable Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable Entities.swift"; sourceTree = "<group>"; };
+		63F9BCD929EC304900787CE8 /* LifeLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F9BCDC29EC304900787CE8 /* LifeLineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeLineApp.swift; sourceTree = "<group>"; };
+		63F9BCE029EC304C00787CE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63F9BCE329EC304C00787CE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		63F9BCEC29EC414C00787CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63F9BCD629EC304900787CE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		632110AD29F4581B0089AF73 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				63CC74B32A13DEEC00A0424D /* Activity.swift */,
+				633812D429F450C200670D63 /* Visit.swift */,
+				63CC74B52A13DF0C00A0424D /* Motion.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		632110B029F45AEC0089AF73 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				63792B822A013AD5000897C2 /* InvertedScrollView.swift */,
+				63792B842A013C5C000897C2 /* AddressDecoder.swift */,
+				63792B862A015B07000897C2 /* LocationManager.swift */,
+				6363272E2A0431AA00EEB066 /* MotionActivityManager.swift */,
+				63E565342A069D4A005CDB69 /* Codable Entities.swift */,
+				6352EB0F2A17A3BA0015E9D1 /* CMActivity extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		633812CA29F44A7A00670D63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63F9BCDC29EC304900787CE8 /* LifeLineApp.swift */,
+				63F9BCE029EC304C00787CE8 /* Assets.xcassets */,
+				63F9BCEC29EC414C00787CE8 /* Info.plist */,
+				632110B129F466B70089AF73 /* LifeLine.entitlements */,
+				63F9BCE229EC304C00787CE8 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		633812D629F450E600670D63 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				632110AD29F4581B0089AF73 /* Entities */,
+				633812CE29F4502600670D63 /* Persistence.swift */,
+				633812CB29F44AEC00670D63 /* DataModel.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		63F9BCD029EC304900787CE8 = {
+			isa = PBXGroup;
+			children = (
+				63F9BCDB29EC304900787CE8 /* LifeLine */,
+				63F9BCDA29EC304900787CE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63F9BCDA29EC304900787CE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63F9BCD929EC304900787CE8 /* LifeLine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63F9BCDB29EC304900787CE8 /* LifeLine */ = {
+			isa = PBXGroup;
+			children = (
+				63792B7E2A001DD1000897C2 /* ContentView.swift */,
+				6363272C2A04104D00EEB066 /* Timeline.swift */,
+				6352EB112A17B2ED0015E9D1 /* Visit Cell.swift */,
+				6352EB132A17B3A80015E9D1 /* Motion Cell.swift */,
+				632110B229F46CA50089AF73 /* Onboarding.swift */,
+				632110B029F45AEC0089AF73 /* Helpers */,
+				633812D629F450E600670D63 /* CoreData */,
+				633812CA29F44A7A00670D63 /* Resources */,
+			);
+			path = LifeLine;
+			sourceTree = "<group>";
+		};
+		63F9BCE229EC304C00787CE8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				63F9BCE329EC304C00787CE8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63F9BCD829EC304900787CE8 /* LifeLine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63F9BCE729EC304C00787CE8 /* Build configuration list for PBXNativeTarget "LifeLine" */;
+			buildPhases = (
+				63F9BCD529EC304900787CE8 /* Sources */,
+				63F9BCD629EC304900787CE8 /* Frameworks */,
+				63F9BCD729EC304900787CE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifeLine;
+			packageProductDependencies = (
+			);
+			productName = LifeLine;
+			productReference = 63F9BCD929EC304900787CE8 /* LifeLine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63F9BCD129EC304900787CE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					63F9BCD829EC304900787CE8 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 63F9BCD429EC304900787CE8 /* Build configuration list for PBXProject "LifeLine" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63F9BCD029EC304900787CE8;
+			packageReferences = (
+			);
+			productRefGroup = 63F9BCDA29EC304900787CE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63F9BCD829EC304900787CE8 /* LifeLine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63F9BCD729EC304900787CE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F9BCE429EC304C00787CE8 /* Preview Assets.xcassets in Resources */,
+				63F9BCE129EC304C00787CE8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63F9BCD529EC304900787CE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6352EB142A17B3A80015E9D1 /* Motion Cell.swift in Sources */,
+				63CC74B42A13DEEC00A0424D /* Activity.swift in Sources */,
+				63E565352A069D4A005CDB69 /* Codable Entities.swift in Sources */,
+				633812CD29F44AEC00670D63 /* DataModel.xcdatamodeld in Sources */,
+				63792B7F2A001DD1000897C2 /* ContentView.swift in Sources */,
+				63CC74B62A13DF0C00A0424D /* Motion.swift in Sources */,
+				6352EB102A17A3BA0015E9D1 /* CMActivity extensions.swift in Sources */,
+				63792B872A015B07000897C2 /* LocationManager.swift in Sources */,
+				633812CF29F4502600670D63 /* Persistence.swift in Sources */,
+				632110B329F46CA50089AF73 /* Onboarding.swift in Sources */,
+				6363272D2A04104D00EEB066 /* Timeline.swift in Sources */,
+				6352EB122A17B2EE0015E9D1 /* Visit Cell.swift in Sources */,
+				63F9BCDD29EC304900787CE8 /* LifeLineApp.swift in Sources */,
+				63792B832A013AD5000897C2 /* InvertedScrollView.swift in Sources */,
+				633812D529F450C200670D63 /* Visit.swift in Sources */,
+				63792B852A013C5C000897C2 /* AddressDecoder.swift in Sources */,
+				6363272F2A0431AA00EEB066 /* MotionActivityManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		63F9BCE529EC304C00787CE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63F9BCE629EC304C00787CE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63F9BCE829EC304C00787CE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LifeLine/Resources/LifeLine.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LifeLine/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = XW6LRWG87C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LifeLine/Resources/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This information is required for tracking your life.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This information is required for tracking your life.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This information is required for tracking your life.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "This information is required for tracking your activities.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nnnkbrrr.LifeLine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63F9BCE929EC304C00787CE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LifeLine/Resources/LifeLine.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LifeLine/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = XW6LRWG87C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LifeLine/Resources/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This information is required for tracking your life.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This information is required for tracking your life.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This information is required for tracking your life.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "This information is required for tracking your activities.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nnnkbrrr.LifeLine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63F9BCD429EC304900787CE8 /* Build configuration list for PBXProject "LifeLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F9BCE529EC304C00787CE8 /* Debug */,
+				63F9BCE629EC304C00787CE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63F9BCE729EC304C00787CE8 /* Build configuration list for PBXNativeTarget "LifeLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F9BCE829EC304C00787CE8 /* Debug */,
+				63F9BCE929EC304C00787CE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		633812CB29F44AEC00670D63 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				633812CC29F44AEC00670D63 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 633812CC29F44AEC00670D63 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 63F9BCD129EC304900787CE8 /* Project object */;
+}

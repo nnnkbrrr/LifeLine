@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Activity" representedClassName="Activity" syncable="YES">
+        <attribute name="dateSince" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dateTill" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Motion" representedClassName="Motion" parentEntity="Activity" syncable="YES">
+        <attribute name="activityType" attributeType="String"/>
+    </entity>
+    <entity name="Visit" representedClassName="Visit" parentEntity="Activity" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="horizontalAccuracy" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+</model>
