@@ -15,7 +15,7 @@ struct Timeline: View {
 	]) var activities: FetchedResults<Activity>
 	
 	var body: some View {
-		ScrollView {
+		InvertedScrollView {
 			VStack {
 				ForEach(Array(activities), id: \.self) { activity in
 					if let visit = activity as? Visit {
@@ -23,7 +23,7 @@ struct Timeline: View {
 					} else if let motion = activity as? Motion {
 						MotionCellView(motion: motion)
 					} else if let workout = activity as? Workout {
-						
+						WorkoutCell(workout: workout)
 					}
 				}
 			}
