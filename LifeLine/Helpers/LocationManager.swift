@@ -30,8 +30,6 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
 		self.authorizationStatus = status
 	}
 	
-	#warning("did pause location updates method!!!")
-	
 	func locationManager(_ manager: CLLocationManager, didVisit visit: CLVisit) {
 		Task {
 			if visit.arrivalDate != Date.distantPast && visit.departureDate != Date.distantFuture {
@@ -48,11 +46,16 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
 					newVisit.dateSince = visit.arrivalDate
 					newVisit.dateTill = visit.departureDate
 					
-					if let lastVisitDeparture: Date =
-						UserDefaults.standard.object(forKey: "last-visit-departure") as? Date {
+					if let lastVisitDeparture: Date = UserDefaults.standard.object(
+						forKey: "last-visit-departure"
+					) as? Date {
+						var fetchingActivitiesQueue = OperationQueue()
+						fetchingActivitiesQueue.name = "Fetching Activities Queue"
+						fetchingActivitiesQueue.maxConcurrentOperationCount = 1
+						
 						CMMotionActivityManager().queryActivityStarting(
 							from: lastVisitDeparture, to: visit.arrivalDate,
-							to: OperationQueue.current!,
+							to: fetchingActivitiesQueue,
 							withHandler: { (activities: [CMMotionActivity]?, error: Error?) -> () in
 								if let activities {
 									var lastActivityType: CMMotionActivityType? = nil
@@ -72,6 +75,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
 						)
 					}
 					
+					#warning("there is another queue. user defaults may be rewritten too early")
 					UserDefaults.standard.set(visit.departureDate, forKey: "last-visit-departure")
 					try? context.save()
 				}

@@ -9,6 +9,13 @@ import SwiftUI
 
 // MARK: Onboarding
 
+
+
+#warning("vvv")
+import HealthKit
+
+
+
 struct OnboardingView: View {
 	@ObservedObject var locationManager: LocationManager
 	@ObservedObject var motionActivityManager: MotionActivityManager
@@ -42,6 +49,28 @@ struct OnboardingView: View {
 				motionActivityManager.requestAuthorization()
 			} label: {
 				Text("Motion")
+					.bold()
+					.padding(.horizontal)
+					.padding()
+					.background(Color.accentColor)
+					.clipShape(Capsule())
+			}
+			.buttonStyle(.plain)
+			
+			Button {
+				Task {
+					let healthStore = HKHealthStore()
+					let readObjectTypes: Set<HKObjectType> = [
+						HKSeriesType.workoutRoute(),
+						HKSeriesType.workoutType(),
+						HKSampleType.quantityType(forIdentifier: .distanceWalkingRunning)!,
+						HKSampleType.quantityType(forIdentifier: .heartRate)!
+					]
+					
+					try? await healthStore.requestAuthorization(toShare: [], read: readObjectTypes)
+				}
+			} label: {
+				Text("Health data")
 					.bold()
 					.padding(.horizontal)
 					.padding()

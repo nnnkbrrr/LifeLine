@@ -8,6 +8,12 @@
 import SwiftUI
 import CoreMotion
 
+
+
+
+#warning("vvv")
+import HealthKit
+
 struct Timeline: View {
 	@Environment(\.managedObjectContext) private var moc
 	@FetchRequest(entity: Activity.entity(), sortDescriptors: [

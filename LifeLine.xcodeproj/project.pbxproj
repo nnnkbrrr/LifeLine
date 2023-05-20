@@ -372,6 +372,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LifeLine/Resources/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This information is required for tracking your workouts and sleep data.";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This information is required for tracking your life.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This information is required for tracking your life.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This information is required for tracking your life.";
@@ -408,6 +409,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LifeLine/Resources/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This information is required for tracking your workouts and sleep data.";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This information is required for tracking your life.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This information is required for tracking your life.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This information is required for tracking your life.";
