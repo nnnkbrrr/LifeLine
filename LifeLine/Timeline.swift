@@ -8,12 +8,6 @@
 import SwiftUI
 import CoreMotion
 
-
-
-
-#warning("vvv")
-import HealthKit
-
 struct Timeline: View {
 	@Environment(\.managedObjectContext) private var moc
 	@FetchRequest(entity: Activity.entity(), sortDescriptors: [
@@ -28,6 +22,8 @@ struct Timeline: View {
 						VisitCellView(visit: visit)
 					} else if let motion = activity as? Motion {
 						MotionCellView(motion: motion)
+					} else if let workout = activity as? Workout {
+						
 					}
 				}
 			}

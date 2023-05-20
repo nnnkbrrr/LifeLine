@@ -14,4 +14,8 @@
         <attribute name="longitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="Workout" representedClassName="Workout" parentEntity="Activity" syncable="YES">
+        <attribute name="activityType" attributeType="String"/>
+        <attribute name="healthKitSampleID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
 </model>

@@ -11,9 +11,13 @@
 		633812CD29F44AEC00670D63 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 633812CB29F44AEC00670D63 /* DataModel.xcdatamodeld */; };
 		633812CF29F4502600670D63 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633812CE29F4502600670D63 /* Persistence.swift */; };
 		633812D529F450C200670D63 /* Visit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633812D429F450C200670D63 /* Visit.swift */; };
-		6352EB102A17A3BA0015E9D1 /* CMActivity extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352EB0F2A17A3BA0015E9D1 /* CMActivity extensions.swift */; };
+		6352EB102A17A3BA0015E9D1 /* CMActivity types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352EB0F2A17A3BA0015E9D1 /* CMActivity types.swift */; };
 		6352EB122A17B2EE0015E9D1 /* Visit Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352EB112A17B2ED0015E9D1 /* Visit Cell.swift */; };
 		6352EB142A17B3A80015E9D1 /* Motion Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352EB132A17B3A80015E9D1 /* Motion Cell.swift */; };
+		6352EB162A18FDFD0015E9D1 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352EB152A18FDFD0015E9D1 /* HealthKitManager.swift */; };
+		6352EB1C2A190DEC0015E9D1 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352EB1B2A190DEC0015E9D1 /* Workout.swift */; };
+		6352EB1E2A19115E0015E9D1 /* CMWorkout types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352EB1D2A19115E0015E9D1 /* CMWorkout types.swift */; };
+		6352EB242A191A540015E9D1 /* Workout Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352EB232A191A540015E9D1 /* Workout Cell.swift */; };
 		6363272D2A04104D00EEB066 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6363272C2A04104D00EEB066 /* Timeline.swift */; };
 		6363272F2A0431AA00EEB066 /* MotionActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6363272E2A0431AA00EEB066 /* MotionActivityManager.swift */; };
 		63792B7F2A001DD1000897C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63792B7E2A001DD1000897C2 /* ContentView.swift */; };
@@ -34,9 +38,13 @@
 		633812CC29F44AEC00670D63 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		633812CE29F4502600670D63 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		633812D429F450C200670D63 /* Visit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visit.swift; sourceTree = "<group>"; };
-		6352EB0F2A17A3BA0015E9D1 /* CMActivity extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMActivity extensions.swift"; sourceTree = "<group>"; };
+		6352EB0F2A17A3BA0015E9D1 /* CMActivity types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMActivity types.swift"; sourceTree = "<group>"; };
 		6352EB112A17B2ED0015E9D1 /* Visit Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Visit Cell.swift"; sourceTree = "<group>"; };
 		6352EB132A17B3A80015E9D1 /* Motion Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Motion Cell.swift"; sourceTree = "<group>"; };
+		6352EB152A18FDFD0015E9D1 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		6352EB1B2A190DEC0015E9D1 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		6352EB1D2A19115E0015E9D1 /* CMWorkout types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMWorkout types.swift"; sourceTree = "<group>"; };
+		6352EB232A191A540015E9D1 /* Workout Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workout Cell.swift"; sourceTree = "<group>"; };
 		6363272C2A04104D00EEB066 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		6363272E2A0431AA00EEB066 /* MotionActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionActivityManager.swift; sourceTree = "<group>"; };
 		63792B7E2A001DD1000897C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +78,7 @@
 				63CC74B32A13DEEC00A0424D /* Activity.swift */,
 				633812D429F450C200670D63 /* Visit.swift */,
 				63CC74B52A13DF0C00A0424D /* Motion.swift */,
+				6352EB1B2A190DEC0015E9D1 /* Workout.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -79,10 +88,9 @@
 			children = (
 				63792B822A013AD5000897C2 /* InvertedScrollView.swift */,
 				63792B842A013C5C000897C2 /* AddressDecoder.swift */,
-				63792B862A015B07000897C2 /* LocationManager.swift */,
-				6363272E2A0431AA00EEB066 /* MotionActivityManager.swift */,
 				63E565342A069D4A005CDB69 /* Codable Entities.swift */,
-				6352EB0F2A17A3BA0015E9D1 /* CMActivity extensions.swift */,
+				6352EB0F2A17A3BA0015E9D1 /* CMActivity types.swift */,
+				6352EB1D2A19115E0015E9D1 /* CMWorkout types.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -109,6 +117,43 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		6352EB1F2A1919CD0015E9D1 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				6352EB202A1919E70015E9D1 /* Visit */,
+				6352EB212A1919EF0015E9D1 /* Motion */,
+				6352EB222A191A040015E9D1 /* Health */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		6352EB202A1919E70015E9D1 /* Visit */ = {
+			isa = PBXGroup;
+			children = (
+				6352EB112A17B2ED0015E9D1 /* Visit Cell.swift */,
+				63792B862A015B07000897C2 /* LocationManager.swift */,
+			);
+			path = Visit;
+			sourceTree = "<group>";
+		};
+		6352EB212A1919EF0015E9D1 /* Motion */ = {
+			isa = PBXGroup;
+			children = (
+				6352EB132A17B3A80015E9D1 /* Motion Cell.swift */,
+				6363272E2A0431AA00EEB066 /* MotionActivityManager.swift */,
+			);
+			path = Motion;
+			sourceTree = "<group>";
+		};
+		6352EB222A191A040015E9D1 /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				6352EB232A191A540015E9D1 /* Workout Cell.swift */,
+				6352EB152A18FDFD0015E9D1 /* HealthKitManager.swift */,
+			);
+			path = Health;
+			sourceTree = "<group>";
+		};
 		63F9BCD029EC304900787CE8 = {
 			isa = PBXGroup;
 			children = (
@@ -130,9 +175,8 @@
 			children = (
 				63792B7E2A001DD1000897C2 /* ContentView.swift */,
 				6363272C2A04104D00EEB066 /* Timeline.swift */,
-				6352EB112A17B2ED0015E9D1 /* Visit Cell.swift */,
-				6352EB132A17B3A80015E9D1 /* Motion Cell.swift */,
 				632110B229F46CA50089AF73 /* Onboarding.swift */,
+				6352EB1F2A1919CD0015E9D1 /* Activities */,
 				632110B029F45AEC0089AF73 /* Helpers */,
 				633812D629F450E600670D63 /* CoreData */,
 				633812CA29F44A7A00670D63 /* Resources */,
@@ -222,14 +266,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6352EB1E2A19115E0015E9D1 /* CMWorkout types.swift in Sources */,
 				6352EB142A17B3A80015E9D1 /* Motion Cell.swift in Sources */,
 				63CC74B42A13DEEC00A0424D /* Activity.swift in Sources */,
+				6352EB1C2A190DEC0015E9D1 /* Workout.swift in Sources */,
 				63E565352A069D4A005CDB69 /* Codable Entities.swift in Sources */,
 				633812CD29F44AEC00670D63 /* DataModel.xcdatamodeld in Sources */,
 				63792B7F2A001DD1000897C2 /* ContentView.swift in Sources */,
 				63CC74B62A13DF0C00A0424D /* Motion.swift in Sources */,
-				6352EB102A17A3BA0015E9D1 /* CMActivity extensions.swift in Sources */,
+				6352EB102A17A3BA0015E9D1 /* CMActivity types.swift in Sources */,
 				63792B872A015B07000897C2 /* LocationManager.swift in Sources */,
+				6352EB162A18FDFD0015E9D1 /* HealthKitManager.swift in Sources */,
 				633812CF29F4502600670D63 /* Persistence.swift in Sources */,
 				632110B329F46CA50089AF73 /* Onboarding.swift in Sources */,
 				6363272D2A04104D00EEB066 /* Timeline.swift in Sources */,
@@ -237,6 +284,7 @@
 				63F9BCDD29EC304900787CE8 /* LifeLineApp.swift in Sources */,
 				63792B832A013AD5000897C2 /* InvertedScrollView.swift in Sources */,
 				633812D529F450C200670D63 /* Visit.swift in Sources */,
+				6352EB242A191A540015E9D1 /* Workout Cell.swift in Sources */,
 				63792B852A013C5C000897C2 /* AddressDecoder.swift in Sources */,
 				6363272F2A0431AA00EEB066 /* MotionActivityManager.swift in Sources */,
 			);
