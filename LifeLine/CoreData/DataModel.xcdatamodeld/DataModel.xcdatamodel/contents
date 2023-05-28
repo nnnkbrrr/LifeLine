@@ -7,6 +7,10 @@
     <entity name="Motion" representedClassName="Motion" parentEntity="Activity" syncable="YES">
         <attribute name="activityType" attributeType="String"/>
     </entity>
+    <entity name="Sleep" representedClassName="Sleep" parentEntity="Activity" syncable="YES">
+        <attribute name="healthKitSampleID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="sleepState" attributeType="String"/>
+    </entity>
     <entity name="Visit" representedClassName="Visit" parentEntity="Activity" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String"/>
         <attribute name="horizontalAccuracy" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>

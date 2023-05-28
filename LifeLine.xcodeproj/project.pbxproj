@@ -16,7 +16,7 @@
 		6352EB142A17B3A80015E9D1 /* Motion Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352EB132A17B3A80015E9D1 /* Motion Cell.swift */; };
 		6352EB162A18FDFD0015E9D1 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352EB152A18FDFD0015E9D1 /* HealthKitManager.swift */; };
 		6352EB1C2A190DEC0015E9D1 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352EB1B2A190DEC0015E9D1 /* Workout.swift */; };
-		6352EB1E2A19115E0015E9D1 /* CMWorkout types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352EB1D2A19115E0015E9D1 /* CMWorkout types.swift */; };
+		6352EB1E2A19115E0015E9D1 /* Workout Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352EB1D2A19115E0015E9D1 /* Workout Types.swift */; };
 		6352EB242A191A540015E9D1 /* Workout Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352EB232A191A540015E9D1 /* Workout Cell.swift */; };
 		6363272D2A04104D00EEB066 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6363272C2A04104D00EEB066 /* Timeline.swift */; };
 		6363272F2A0431AA00EEB066 /* MotionActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6363272E2A0431AA00EEB066 /* MotionActivityManager.swift */; };
@@ -24,6 +24,11 @@
 		63792B832A013AD5000897C2 /* InvertedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63792B822A013AD5000897C2 /* InvertedScrollView.swift */; };
 		63792B852A013C5C000897C2 /* AddressDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63792B842A013C5C000897C2 /* AddressDecoder.swift */; };
 		63792B872A015B07000897C2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63792B862A015B07000897C2 /* LocationManager.swift */; };
+		6383793D2A1B5E1D00BDF9E1 /* Workout Delivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383793C2A1B5E1D00BDF9E1 /* Workout Delivery.swift */; };
+		638379402A1B5E6800BDF9E1 /* Sleep Delivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383793F2A1B5E6800BDF9E1 /* Sleep Delivery.swift */; };
+		638379472A1B6A3600BDF9E1 /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638379462A1B6A3600BDF9E1 /* Sleep.swift */; };
+		638379492A1B6BB500BDF9E1 /* Sleep Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638379482A1B6BB500BDF9E1 /* Sleep Cell.swift */; };
+		639F6CB32A20964100B0F6CF /* Sleep Category Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639F6CB22A20964100B0F6CF /* Sleep Category Types.swift */; };
 		63CC74B42A13DEEC00A0424D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CC74B32A13DEEC00A0424D /* Activity.swift */; };
 		63CC74B62A13DF0C00A0424D /* Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CC74B52A13DF0C00A0424D /* Motion.swift */; };
 		63E565352A069D4A005CDB69 /* Codable Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E565342A069D4A005CDB69 /* Codable Entities.swift */; };
@@ -43,7 +48,7 @@
 		6352EB132A17B3A80015E9D1 /* Motion Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Motion Cell.swift"; sourceTree = "<group>"; };
 		6352EB152A18FDFD0015E9D1 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		6352EB1B2A190DEC0015E9D1 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
-		6352EB1D2A19115E0015E9D1 /* CMWorkout types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMWorkout types.swift"; sourceTree = "<group>"; };
+		6352EB1D2A19115E0015E9D1 /* Workout Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workout Types.swift"; sourceTree = "<group>"; };
 		6352EB232A191A540015E9D1 /* Workout Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workout Cell.swift"; sourceTree = "<group>"; };
 		6363272C2A04104D00EEB066 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		6363272E2A0431AA00EEB066 /* MotionActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionActivityManager.swift; sourceTree = "<group>"; };
@@ -51,6 +56,11 @@
 		63792B822A013AD5000897C2 /* InvertedScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertedScrollView.swift; sourceTree = "<group>"; };
 		63792B842A013C5C000897C2 /* AddressDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDecoder.swift; sourceTree = "<group>"; };
 		63792B862A015B07000897C2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		6383793C2A1B5E1D00BDF9E1 /* Workout Delivery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workout Delivery.swift"; sourceTree = "<group>"; };
+		6383793F2A1B5E6800BDF9E1 /* Sleep Delivery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sleep Delivery.swift"; sourceTree = "<group>"; };
+		638379462A1B6A3600BDF9E1 /* Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep.swift; sourceTree = "<group>"; };
+		638379482A1B6BB500BDF9E1 /* Sleep Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sleep Cell.swift"; sourceTree = "<group>"; };
+		639F6CB22A20964100B0F6CF /* Sleep Category Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sleep Category Types.swift"; sourceTree = "<group>"; };
 		63CC74B32A13DEEC00A0424D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		63CC74B52A13DF0C00A0424D /* Motion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motion.swift; sourceTree = "<group>"; };
 		63E565342A069D4A005CDB69 /* Codable Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable Entities.swift"; sourceTree = "<group>"; };
@@ -79,6 +89,7 @@
 				633812D429F450C200670D63 /* Visit.swift */,
 				63CC74B52A13DF0C00A0424D /* Motion.swift */,
 				6352EB1B2A190DEC0015E9D1 /* Workout.swift */,
+				638379462A1B6A3600BDF9E1 /* Sleep.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -90,7 +101,6 @@
 				63792B842A013C5C000897C2 /* AddressDecoder.swift */,
 				63E565342A069D4A005CDB69 /* Codable Entities.swift */,
 				6352EB0F2A17A3BA0015E9D1 /* CMActivity types.swift */,
-				6352EB1D2A19115E0015E9D1 /* CMWorkout types.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -148,10 +158,31 @@
 		6352EB222A191A040015E9D1 /* Health */ = {
 			isa = PBXGroup;
 			children = (
-				6352EB232A191A540015E9D1 /* Workout Cell.swift */,
+				638379412A1B5E7000BDF9E1 /* Sleep */,
+				6383793E2A1B5E4C00BDF9E1 /* Workout */,
 				6352EB152A18FDFD0015E9D1 /* HealthKitManager.swift */,
 			);
 			path = Health;
+			sourceTree = "<group>";
+		};
+		6383793E2A1B5E4C00BDF9E1 /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				6352EB232A191A540015E9D1 /* Workout Cell.swift */,
+				6383793C2A1B5E1D00BDF9E1 /* Workout Delivery.swift */,
+				6352EB1D2A19115E0015E9D1 /* Workout Types.swift */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
+		638379412A1B5E7000BDF9E1 /* Sleep */ = {
+			isa = PBXGroup;
+			children = (
+				638379482A1B6BB500BDF9E1 /* Sleep Cell.swift */,
+				6383793F2A1B5E6800BDF9E1 /* Sleep Delivery.swift */,
+				639F6CB22A20964100B0F6CF /* Sleep Category Types.swift */,
+			);
+			path = Sleep;
 			sourceTree = "<group>";
 		};
 		63F9BCD029EC304900787CE8 = {
@@ -266,27 +297,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6352EB1E2A19115E0015E9D1 /* CMWorkout types.swift in Sources */,
+				6352EB1E2A19115E0015E9D1 /* Workout Types.swift in Sources */,
 				6352EB142A17B3A80015E9D1 /* Motion Cell.swift in Sources */,
 				63CC74B42A13DEEC00A0424D /* Activity.swift in Sources */,
 				6352EB1C2A190DEC0015E9D1 /* Workout.swift in Sources */,
 				63E565352A069D4A005CDB69 /* Codable Entities.swift in Sources */,
 				633812CD29F44AEC00670D63 /* DataModel.xcdatamodeld in Sources */,
 				63792B7F2A001DD1000897C2 /* ContentView.swift in Sources */,
+				639F6CB32A20964100B0F6CF /* Sleep Category Types.swift in Sources */,
 				63CC74B62A13DF0C00A0424D /* Motion.swift in Sources */,
 				6352EB102A17A3BA0015E9D1 /* CMActivity types.swift in Sources */,
 				63792B872A015B07000897C2 /* LocationManager.swift in Sources */,
 				6352EB162A18FDFD0015E9D1 /* HealthKitManager.swift in Sources */,
 				633812CF29F4502600670D63 /* Persistence.swift in Sources */,
+				6383793D2A1B5E1D00BDF9E1 /* Workout Delivery.swift in Sources */,
 				632110B329F46CA50089AF73 /* Onboarding.swift in Sources */,
 				6363272D2A04104D00EEB066 /* Timeline.swift in Sources */,
 				6352EB122A17B2EE0015E9D1 /* Visit Cell.swift in Sources */,
 				63F9BCDD29EC304900787CE8 /* LifeLineApp.swift in Sources */,
 				63792B832A013AD5000897C2 /* InvertedScrollView.swift in Sources */,
+				638379402A1B5E6800BDF9E1 /* Sleep Delivery.swift in Sources */,
+				638379472A1B6A3600BDF9E1 /* Sleep.swift in Sources */,
 				633812D529F450C200670D63 /* Visit.swift in Sources */,
 				6352EB242A191A540015E9D1 /* Workout Cell.swift in Sources */,
 				63792B852A013C5C000897C2 /* AddressDecoder.swift in Sources */,
 				6363272F2A0431AA00EEB066 /* MotionActivityManager.swift in Sources */,
+				638379492A1B6BB500BDF9E1 /* Sleep Cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +466,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,7 +503,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

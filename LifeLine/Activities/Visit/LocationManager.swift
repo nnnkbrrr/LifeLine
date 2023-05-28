@@ -36,49 +36,45 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
 				let context = PersistenceController.shared.container.newBackgroundContext()
 				context.automaticallyMergesChangesFromParent = true
 				
-				let address = await visit.address
-				await context.perform {
-					let newVisit = Visit(context: context)
-					newVisit.address = address
-					newVisit.latitude = visit.coordinate.latitude
-					newVisit.longitude = visit.coordinate.longitude
-					newVisit.horizontalAccuracy = visit.horizontalAccuracy
-					newVisit.dateSince = visit.arrivalDate
-					newVisit.dateTill = visit.departureDate
+				if let lastVisitDeparture: Date = UserDefaults.standard.object(
+					forKey: "last-visit-departure"
+				) as? Date {
+					let fetchingActivitiesQueue = OperationQueue()
+					fetchingActivitiesQueue.name = "Fetching Activities Queue"
+					fetchingActivitiesQueue.maxConcurrentOperationCount = 1
 					
-					if let lastVisitDeparture: Date = UserDefaults.standard.object(
-						forKey: "last-visit-departure"
-					) as? Date {
-						var fetchingActivitiesQueue = OperationQueue()
-						fetchingActivitiesQueue.name = "Fetching Activities Queue"
-						fetchingActivitiesQueue.maxConcurrentOperationCount = 1
-						
-						CMMotionActivityManager().queryActivityStarting(
-							from: lastVisitDeparture, to: visit.arrivalDate,
-							to: fetchingActivitiesQueue,
-							withHandler: { (activities: [CMMotionActivity]?, error: Error?) -> () in
-								if let activities {
-									var lastActivityType: CMMotionActivityType? = nil
-									for activity in activities {
-										if let motionType = activity.motionType, motionType != lastActivityType
-											&& CMMotionActivityType.allMovementTypes.contains(motionType) {
-											let newMotion = Motion(context: context)
-											newMotion.dateSince = lastVisitDeparture
-											newMotion.dateTill = visit.arrivalDate
-											newMotion.activityType = motionType.stringValue
-											
-											lastActivityType = motionType
-										}
+					CMMotionActivityManager().queryActivityStarting(
+						from: lastVisitDeparture, to: visit.arrivalDate,
+						to: fetchingActivitiesQueue,
+						withHandler: { (activities: [CMMotionActivity]?, error: Error?) -> () in
+							if let activities {
+								var lastActivityType: CMMotionActivityType? = nil
+								for activity in activities {
+									if let motionType = activity.motionType, motionType != lastActivityType
+										&& CMMotionActivityType.allMovementTypes.contains(motionType) {
+										let newMotion = Motion(context: context)
+										newMotion.dateSince = lastVisitDeparture
+										newMotion.dateTill = visit.arrivalDate
+										newMotion.activityType = motionType.stringValue
+										
+										lastActivityType = motionType
 									}
 								}
 							}
-						)
-					}
-					
-					#warning("there is another queue. user defaults may be rewritten too early")
-					UserDefaults.standard.set(visit.departureDate, forKey: "last-visit-departure")
-					try? context.save()
+						}
+					)
 				}
+				
+				let newVisit = Visit(context: context)
+				newVisit.address = await visit.address
+				newVisit.latitude = visit.coordinate.latitude
+				newVisit.longitude = visit.coordinate.longitude
+				newVisit.horizontalAccuracy = visit.horizontalAccuracy
+				newVisit.dateSince = visit.arrivalDate
+				newVisit.dateTill = visit.departureDate
+				
+				UserDefaults.standard.set(visit.departureDate, forKey: "last-visit-departure")
+				try? context.save()
 			}
 		}
 	}
